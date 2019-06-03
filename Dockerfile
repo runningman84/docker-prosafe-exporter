@@ -14,6 +14,6 @@ RUN apk add --no-cache tini
 
 USER nobody
 
-ENTRYPOINT ["/sbin/tini"]
+ENTRYPOINT ["/sbin/tini", "--"]
 
 CMD [ "prosafe_exporter"]
