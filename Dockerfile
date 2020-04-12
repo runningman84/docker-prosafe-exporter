@@ -1,7 +1,7 @@
 FROM alpine:3.9
 MAINTAINER Philipp Hellmich <phil@hellmi.de>
 
-ARG VERSION=0.2.6
+ARG VERSION=0.2.7
 
 RUN cd /tmp && \
     wget https://github.com/dalance/prosafe_exporter/releases/download/v$VERSION/prosafe_exporter-v$VERSION-x86_64-lnx.zip -O /tmp/exporter.zip && \
